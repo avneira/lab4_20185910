@@ -1,9 +1,20 @@
 package com.example.lab4_20185910.dto;
 
-public class Ciudad {
+
+import java.util.List;
+
+public class Geolocalizacion {
     String nombre;
     String latitud;
     String longitud;
+
+    public Geolocalizacion(String nombre, String latitud, String longitud) {
+        this.nombre = nombre;
+        this.latitud = latitud;
+        this.longitud = longitud;
+    }
+
+
 
     public String getNombre() {
         return nombre;
@@ -28,4 +39,5 @@ public class Ciudad {
     public void setLongitud(String longitud) {
         this.longitud = longitud;
     }
+
 }
